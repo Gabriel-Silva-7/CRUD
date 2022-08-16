@@ -1,0 +1,27 @@
+//adiciona o produto
+POST http://localhost:4002/products
+Content-Type: application/json
+
+{
+    "name": "caneta",
+    "price": 5
+}
+
+###
+// pesquisa por todos produtos ou por um /id esquecifico
+GET http://localhost:4002/products
+
+###
+//modifica o produto
+PUT http://localhost:4002/products/2a9b61f3-d63e-41a9-af00-c83f4db365c0
+Content-Type: application/json
+
+{
+    "name": "caneta",
+    "price": 34.50
+}
+
+###
+//deleta o produto
+DELETE http://localhost:4002/products/f10ca36f-bae3-4e85-bdef-cec829ab0d34
+
